@@ -17,8 +17,8 @@ public class SubmitQuiz extends Fragment {
     Button get_score;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState){
-        return inflater.inflate(R.layout.submit_quiz, container, false);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
+        return inflater.inflate(R.layout.submit_quiz, null);
     }
 
     public void onActivityCreated(Bundle savedInstanceState){
