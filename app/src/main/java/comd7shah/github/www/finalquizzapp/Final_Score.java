@@ -1,27 +1,38 @@
 package comd7shah.github.www.finalquizzapp;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 /**
  * Created by dhrutishah on 15-02-22.
  */
-public class Final_Score extends Activity {
+public class Final_Score extends Activity implements View.OnClickListener {
 
     TextView q1_score, q2_score, q3_score, q4_score, q5_score, final_score;
     int finalescore;
     int q2answer, q3answer, q4answer, q5answer;
     String q1;
 
+    Button btnreset;
+
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.final_score);
         initControls();
+
+        btnreset = (Button) findViewById(R.id.btnreset);
+        btnreset.setOnClickListener(this);
+
     }
+
+
 
     public void onStart(){
         super.onStart();
@@ -79,8 +90,17 @@ public class Final_Score extends Activity {
 
 
 
+    @Override
+    public void onClick(View v){
+        Intent intent = new Intent(this, Main.class);
+        startActivity(intent);
+    }
 
 
 }
+
+
+
+
 
 
