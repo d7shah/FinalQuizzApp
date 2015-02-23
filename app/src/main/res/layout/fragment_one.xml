@@ -1,50 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/bg">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Q1"
+        android:text="What does this sign mean?"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:textColor="#ffffffff"
+        android:textSize="24dp"
+        android:textStyle="bold" />
 
     <RadioGroup
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="100dp"
+        android:id="@+id/q1_group"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="50dp">
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Waiting restrictions apply"
+            android:id="@+id/q1a1"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:textSize="20dp"
+            android:textColor="#ffffffff"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="No stopping"
+            android:id="@+id/q1a2"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#ffffffff" />
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="No entry"
+            android:id="@+id/q1a3"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:textColor="#ffffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/btnq1"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="39dp" />
+
+    <ImageView
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/nostopping"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="109dp"
-        android:id="@+id/q1_group">
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="New RadioButton"
-            android:id="@+id/q1a1"
-            android:layout_gravity="center_horizontal" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="New RadioButton"
-            android:id="@+id/q1a2"
-            android:layout_gravity="center_horizontal" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="New RadioButton"
-            android:id="@+id/q1a3"
-            android:layout_gravity="center_horizontal" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Submit"
-            android:id="@+id/btnq1"
-            android:layout_gravity="center_horizontal" />
-    </RadioGroup>
+        android:layout_marginTop="44dp" />
 </RelativeLayout>
