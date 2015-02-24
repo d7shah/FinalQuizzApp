@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="#ff3dff27">
+    android:background="@drawable/road">
 
     <TextView
         android:layout_width="wrap_content"
@@ -11,15 +11,19 @@
         android:id="@+id/textView3"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="42dp" />
+        android:layout_marginTop="42dp"
+        android:textColor="#ffd52c2e"
+        android:textSize="24dp"
+        android:textStyle="bold" />
 
     <RadioGroup
         android:layout_width="fill_parent"
         android:layout_height="100dp"
-        android:layout_below="@+id/textView3"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"
-        android:id="@+id/radioGroup2">
+        android:id="@+id/radioGroup2"
+        android:layout_below="@+id/imageView6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp">
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -27,7 +31,12 @@
             android:text="Cycle route ahead"
             android:id="@+id/q3a1"
             android:layout_gravity="center_horizontal"
-            android:checked="false" />
+            android:checked="false"
+            android:textColor="#ffd52c2e"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:buttonTint="#ffd52c2e"
+            android:paddingRight="90dp" />
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -35,7 +44,12 @@
             android:text="No cycling"
             android:id="@+id/q3a2"
             android:layout_gravity="center_horizontal"
-            android:checked="false" />
+            android:checked="false"
+            android:buttonTint="#ffd52c2e"
+            android:textColor="#ffd52c2e"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:paddingRight="158dp" />
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -43,7 +57,12 @@
             android:text="Cycles only"
             android:id="@+id/q3a3"
             android:layout_gravity="center_horizontal"
-            android:checked="false" />
+            android:checked="false"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#ffd52c2e"
+            android:buttonTint="#ffd52c2e"
+            android:paddingRight="150dp" />
 
     </RadioGroup>
 
@@ -53,7 +72,19 @@
         android:text="SAVE"
         android:id="@+id/btn3"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="54dp"
-        android:layout_below="@+id/radioGroup2"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="62dp"
+        android:paddingLeft="120dp"
+        android:paddingRight="120dp"
+        android:background="#fff3ff3a" />
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:id="@+id/imageView6"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/cycle"
+        android:layout_marginTop="10dp" />
 </RelativeLayout>

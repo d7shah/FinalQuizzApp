@@ -11,5 +11,5 @@
         android:src="@drawable/newsplash"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:background="#fffbfbfb" />
+        android:background="@drawable/road" />
 </RelativeLayout>

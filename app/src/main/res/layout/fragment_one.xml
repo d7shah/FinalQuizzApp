@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="@drawable/bg">
+    android:background="@drawable/road">
 
     <TextView
         android:layout_width="wrap_content"
@@ -12,7 +12,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="54dp"
-        android:textColor="#ffffffff"
+        android:textColor="#ffe73e32"
         android:textSize="24dp"
         android:textStyle="bold" />
 
@@ -34,8 +34,9 @@
             android:layout_gravity="center_horizontal"
             android:checked="false"
             android:textSize="20dp"
-            android:textColor="#ffffffff"
-            android:textStyle="bold" />
+            android:textColor="#ffd52c2e"
+            android:textStyle="bold"
+            android:buttonTint="#ffd52c2e" />
 
         <RadioButton
             android:layout_width="fill_parent"
@@ -46,7 +47,8 @@
             android:checked="false"
             android:textStyle="bold"
             android:textSize="20dp"
-            android:textColor="#ffffffff" />
+            android:textColor="#ffd52c2e"
+            android:buttonTint="#ffd52c2e" />
 
         <RadioButton
             android:layout_width="fill_parent"
@@ -55,9 +57,10 @@
             android:id="@+id/q1a3"
             android:layout_gravity="center_horizontal"
             android:checked="false"
-            android:textColor="#ffffffff"
+            android:textColor="#ffd52c2e"
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:buttonTint="#ffd52c2e" />
 
     </RadioGroup>
 
@@ -70,8 +73,12 @@
         android:paddingLeft="50dp"
         android:paddingRight="50dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="39dp" />
+        android:layout_marginBottom="39dp"
+        android:background="#fff3ff3a"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
 
     <ImageView
         android:layout_width="175dp"

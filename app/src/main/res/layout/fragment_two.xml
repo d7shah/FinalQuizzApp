@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="@drawable/bg">
+    android:background="@drawable/road">
 
     <TextView
         android:layout_width="wrap_content"
@@ -11,16 +11,19 @@
         android:id="@+id/textView2"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp" />
+        android:layout_marginTop="36dp"
+        android:textColor="#ffe73e32"
+        android:textSize="24dp"
+        android:textStyle="bold" />
 
     <RadioGroup
         android:layout_width="fill_parent"
         android:layout_height="100dp"
-        android:layout_below="@+id/textView2"
-        android:layout_marginTop="84dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:id="@+id/radioGroup">
+        android:id="@+id/radioGroup"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="34dp">
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -29,7 +32,11 @@
             android:id="@+id/q2a1"
             android:layout_gravity="center_horizontal"
             android:checked="false"
-            android:paddingRight="30dp" />
+            android:paddingRight="43dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#ffe73e32"
+            android:buttonTint="#ffe73e32" />
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -37,7 +44,12 @@
             android:text="You have priority to oncoming traffic"
             android:id="@+id/q2a2"
             android:layout_gravity="center_horizontal"
-            android:checked="false" />
+            android:checked="false"
+            android:buttonTint="#ffe73e32"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#ffe73e32"
+            android:nestedScrollingEnabled="false" />
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -46,16 +58,22 @@
             android:id="@+id/q2a3"
             android:layout_gravity="center_horizontal"
             android:checked="false"
-            android:paddingRight="105dp" />
+            android:paddingRight="150dp"
+            android:textColor="#ffe73e32"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:buttonTint="#ffe73e32" />
 
     </RadioGroup>
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="225dp"
+        android:layout_height="225dp"
         android:id="@+id/imageView3"
         android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/priority"
+        android:layout_marginTop="10dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -63,7 +81,11 @@
         android:text="SAVE"
         android:id="@+id/q2_button"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="47dp"
-        android:layout_below="@+id/radioGroup"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="51dp"
+        android:paddingRight="120dp"
+        android:paddingLeft="120dp"
+        android:background="#fff3ff3a" />
+
 </RelativeLayout>

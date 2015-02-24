@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="@drawable/bg">
+    android:background="@drawable/road">
 
     <TextView
         android:layout_width="wrap_content"
@@ -11,14 +11,19 @@
         android:id="@+id/textView5"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="51dp" />
+        android:layout_marginTop="51dp"
+        android:textColor="#ffd52c2e"
+        android:textStyle="bold"
+        android:paddingLeft="30dp"
+        android:textSize="24dp" />
 
     <RadioGroup
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_below="@+id/textView5"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="69dp">
+        android:layout_height="100dp"
+        android:id="@+id/radioGroup3"
+        android:layout_marginBottom="40dp"
+        android:layout_above="@+id/btn5"
+        android:layout_centerHorizontal="true">
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -26,15 +31,25 @@
             android:text="Stop even if the road is clear"
             android:id="@+id/q5a1"
             android:layout_gravity="center_horizontal"
-            android:checked="false" />
+            android:checked="false"
+            android:textColor="#ffd52c2e"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:buttonTint="#ffd52c2e"
+            android:paddingRight="60dp" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Stop when traffic is approaching"
             android:id="@+id/q5a2"
+            android:checked="false"
+            android:buttonTint="#ffd52c2e"
+            android:textColor="#ffd52c2e"
+            android:textSize="20dp"
+            android:textStyle="bold"
             android:layout_gravity="center_horizontal"
-            android:checked="false" />
+            android:paddingRight="25dp" />
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -42,13 +57,33 @@
             android:text="Stop if children are waiting to cross"
             android:id="@+id/q5a3"
             android:layout_gravity="center_horizontal"
-            android:checked="false" />
+            android:checked="false"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#ffd52c2e"
+            android:buttonTint="#ffd52c2e" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Submit"
-            android:id="@+id/btn5"
-            android:layout_gravity="center_horizontal" />
     </RadioGroup>
+
+    <ImageView
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:id="@+id/imageView4"
+        android:src="@drawable/stop"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:id="@+id/btn5"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="37dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="120dp"
+        android:paddingRight="120dp"
+        android:background="#fff3ff3a" />
 </RelativeLayout>

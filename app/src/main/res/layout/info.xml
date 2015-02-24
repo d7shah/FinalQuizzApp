@@ -3,7 +3,7 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clickable="true"
-    android:background="#ff040404">
+    android:background="@drawable/road">
 
     <TextView
         android:layout_width="wrap_content"
@@ -16,8 +16,9 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:textColor="#ffffffff"
-        android:paddingLeft="30dp" />
+        android:textColor="#ffd52c2e"
+        android:paddingLeft="30dp"
+        android:textStyle="bold" />
 
     <Button
         android:layout_width="wrap_content"
@@ -28,7 +29,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="62dp"
         android:textColor="#fdff1427"
-        android:background="#ff3dff27"
+        android:background="#fff3ff3a"
         android:paddingRight="50dp"
         android:paddingLeft="50dp" />
 
@@ -39,10 +40,11 @@
         android:text="GOOD LUCK!"
         android:id="@+id/textView7"
         android:layout_marginBottom="40dp"
-        android:textColor="#ffffffff"
+        android:textColor="#ffd52c2e"
         android:layout_above="@+id/button"
         android:layout_centerHorizontal="true"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textSize="30dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -54,7 +56,8 @@
         android:layout_below="@+id/textView6"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:textColor="#ffffffff"
+        android:textColor="#ffd52c2e"
         android:paddingLeft="30dp"
-        android:paddingRight="10dp" />
+        android:paddingRight="10dp"
+        android:textStyle="bold" />
 </RelativeLayout>
