@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="@drawable/road">
+    android:background="#ff72747d">
 
     <TextView
         android:layout_width="wrap_content"
@@ -12,10 +12,11 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="51dp"
-        android:textColor="#ffd52c2e"
+        android:textColor="#ffffff"
         android:textStyle="bold"
         android:paddingLeft="30dp"
-        android:textSize="24dp" />
+        android:textSize="24dp"
+        android:paddingRight="30dp" />
 
     <RadioGroup
         android:layout_width="fill_parent"
@@ -32,10 +33,10 @@
             android:id="@+id/q5a1"
             android:layout_gravity="center_horizontal"
             android:checked="false"
-            android:textColor="#ffd52c2e"
+            android:textColor="#ffffff"
             android:textSize="20dp"
             android:textStyle="bold"
-            android:buttonTint="#ffd52c2e"
+            android:buttonTint="#ffffff"
             android:paddingRight="60dp" />
 
         <RadioButton
@@ -44,8 +45,8 @@
             android:text="Stop when traffic is approaching"
             android:id="@+id/q5a2"
             android:checked="false"
-            android:buttonTint="#ffd52c2e"
-            android:textColor="#ffd52c2e"
+            android:buttonTint="#ffffff"
+            android:textColor="#ffffff"
             android:textSize="20dp"
             android:textStyle="bold"
             android:layout_gravity="center_horizontal"
@@ -60,8 +61,8 @@
             android:checked="false"
             android:textStyle="bold"
             android:textSize="20dp"
-            android:textColor="#ffd52c2e"
-            android:buttonTint="#ffd52c2e" />
+            android:textColor="#ffffff"
+            android:buttonTint="#ffffff" />
 
     </RadioGroup>
 

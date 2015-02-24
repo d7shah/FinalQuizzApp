@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="@drawable/road">
+    android:background="#ff72747d">
 
     <TextView
         android:layout_width="wrap_content"
@@ -12,7 +12,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="42dp"
-        android:textColor="#ffd52c2e"
+        android:textColor="#ffffffff"
         android:textSize="24dp"
         android:textStyle="bold" />
 
@@ -32,10 +32,10 @@
             android:id="@+id/q3a1"
             android:layout_gravity="center_horizontal"
             android:checked="false"
-            android:textColor="#ffd52c2e"
+            android:textColor="#ffffffff"
             android:textSize="20dp"
             android:textStyle="bold"
-            android:buttonTint="#ffd52c2e"
+            android:buttonTint="#ffffffff"
             android:paddingRight="90dp" />
 
         <RadioButton
@@ -45,8 +45,8 @@
             android:id="@+id/q3a2"
             android:layout_gravity="center_horizontal"
             android:checked="false"
-            android:buttonTint="#ffd52c2e"
-            android:textColor="#ffd52c2e"
+            android:buttonTint="#ffffffff"
+            android:textColor="#ffffffff"
             android:textSize="20dp"
             android:textStyle="bold"
             android:paddingRight="158dp" />
@@ -60,8 +60,8 @@
             android:checked="false"
             android:textStyle="bold"
             android:textSize="20dp"
-            android:textColor="#ffd52c2e"
-            android:buttonTint="#ffd52c2e"
+            android:textColor="#ffffffff"
+            android:buttonTint="#ffffffff"
             android:paddingRight="150dp" />
 
     </RadioGroup>

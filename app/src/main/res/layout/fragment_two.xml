@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="@drawable/road">
+    android:background="#ff72747d">
 
     <TextView
         android:layout_width="wrap_content"
@@ -12,7 +12,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="36dp"
-        android:textColor="#ffe73e32"
+        android:textColor="#ffffff"
         android:textSize="24dp"
         android:textStyle="bold" />
 
@@ -35,8 +35,8 @@
             android:paddingRight="43dp"
             android:textStyle="bold"
             android:textSize="20dp"
-            android:textColor="#ffe73e32"
-            android:buttonTint="#ffe73e32" />
+            android:textColor="#ffffff"
+            android:buttonTint="#ffffff" />
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -45,10 +45,10 @@
             android:id="@+id/q2a2"
             android:layout_gravity="center_horizontal"
             android:checked="false"
-            android:buttonTint="#ffe73e32"
+            android:buttonTint="#ffffff"
             android:textStyle="bold"
             android:textSize="20dp"
-            android:textColor="#ffe73e32"
+            android:textColor="#ffffff"
             android:nestedScrollingEnabled="false" />
 
         <RadioButton
@@ -59,15 +59,15 @@
             android:layout_gravity="center_horizontal"
             android:checked="false"
             android:paddingRight="150dp"
-            android:textColor="#ffe73e32"
+            android:textColor="#ffffff"
             android:textStyle="bold"
             android:textSize="20dp"
-            android:buttonTint="#ffe73e32" />
+            android:buttonTint="#ffffff" />
 
     </RadioGroup>
 
     <ImageView
-        android:layout_width="225dp"
+        android:layout_width="235dp"
         android:layout_height="225dp"
         android:id="@+id/imageView3"
         android:layout_below="@+id/textView2"

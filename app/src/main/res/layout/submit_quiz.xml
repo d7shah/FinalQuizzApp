@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="@drawable/road"
+    android:background="#ff72747d"
     android:paddingLeft="20dp"
     android:paddingRight="20dp">
 
@@ -28,7 +28,7 @@
         android:layout_above="@+id/get_score"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="60dp"
-        android:textColor="#ffd52c2e"
+        android:textColor="#ffffff"
         android:textStyle="bold"
         android:textSize="40dp" />
 </RelativeLayout>
