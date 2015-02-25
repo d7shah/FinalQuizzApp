@@ -81,11 +81,11 @@
         android:layout_alignEnd="@+id/textView" />
 
     <ImageView
-        android:layout_width="175dp"
+        android:layout_width="155dp"
         android:layout_height="175dp"
         android:id="@+id/imageView2"
         android:src="@drawable/nostopping"
+        android:layout_marginTop="15dp"
         android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="44dp" />
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
