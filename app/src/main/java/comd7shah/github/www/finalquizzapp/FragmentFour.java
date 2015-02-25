@@ -3,7 +3,6 @@ package comd7shah.github.www.finalquizzapp;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -26,7 +25,7 @@ public class FragmentFour extends Fragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState){
         super.onActivityCreated(savedInstanceState);
-        q4a2 = (RadioButton)getView().findViewById(R.id.q4a3);
+        q4a2 = (RadioButton)getView().findViewById(R.id.q4a2);
         btn4 = (Button)getView().findViewById(R.id.btn4);
 
         final SharedPreferences app_preferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
